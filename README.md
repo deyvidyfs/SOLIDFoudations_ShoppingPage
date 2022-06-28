@@ -1,5 +1,6 @@
 # SOLIDFoudations_ShoppingPage
 
+
 Hello!
 
 This is a companion app for the SOLID Foundations presentation given on the 35th CocoaHeads Campinas.
@@ -16,4 +17,7 @@ If you have any questions or suggestions, just hit me up!
 My contact information is on my GitHub Page.
 
 All the best,
+
 Deyvidy
+
+![image](https://user-images.githubusercontent.com/10189344/176271182-7de06049-d45c-448b-b16f-999b289d39ef.png)
