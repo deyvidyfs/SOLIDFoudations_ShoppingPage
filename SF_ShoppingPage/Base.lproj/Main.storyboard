@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SF_ShoppingPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOLID Foundations" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY3-gZ-GpT">
+                                <rect key="frame" x="20" y="63" width="374" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopping Page Example" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98W-Ye-BfR">
+                                <rect key="frame" x="20" y="105.5" width="374" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Aj-L6-I30">
+                                <rect key="frame" x="20" y="132.5" width="374" height="32"/>
+                                <segments>
+                                    <segment title="Introduction"/>
+                                    <segment title="Original"/>
+                                    <segment title="Refactored"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlClicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="MVI-yb-1u1"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0MJ-RN-ybQ">
+                                <rect key="frame" x="0.0" y="171.5" width="414" height="690.5"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="(placeholder text)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hJU-1h-fRJ">
+                                        <rect key="frame" x="8" y="8" width="398" height="674.5"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.085587795170631017" green="0.085234704391357441" blue="0.086016414141414144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="hJU-1h-fRJ" secondAttribute="bottom" constant="8" id="M9Y-VZ-i2o"/>
+                                    <constraint firstItem="hJU-1h-fRJ" firstAttribute="top" secondItem="0MJ-RN-ybQ" secondAttribute="top" constant="8" id="MQW-n5-XK5"/>
+                                    <constraint firstAttribute="trailing" secondItem="hJU-1h-fRJ" secondAttribute="trailing" constant="8" id="YpC-oc-pgb"/>
+                                    <constraint firstItem="hJU-1h-fRJ" firstAttribute="leading" secondItem="0MJ-RN-ybQ" secondAttribute="leading" constant="8" id="dPT-pd-8on"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.9842329621" green="0.81965643170000002" blue="0.0075615304520000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="98W-Ye-BfR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3xu-iH-ncD"/>
+                            <constraint firstItem="0MJ-RN-ybQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4WW-nD-MD9"/>
+                            <constraint firstItem="LY3-gZ-GpT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="5xQ-Kf-KOc"/>
+                            <constraint firstItem="0MJ-RN-ybQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Zx-Za-t9D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Aj-L6-I30" secondAttribute="trailing" constant="20" id="7cj-QD-5PB"/>
+                            <constraint firstItem="98W-Ye-BfR" firstAttribute="top" secondItem="LY3-gZ-GpT" secondAttribute="bottom" constant="8" symbolic="YES" id="AdM-vA-nve"/>
+                            <constraint firstItem="0MJ-RN-ybQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="B1V-v7-Ntj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="98W-Ye-BfR" secondAttribute="trailing" constant="20" id="JxL-H4-Vln"/>
+                            <constraint firstItem="0MJ-RN-ybQ" firstAttribute="top" secondItem="5Aj-L6-I30" secondAttribute="bottom" constant="8" symbolic="YES" id="afK-Uf-dai"/>
+                            <constraint firstItem="5Aj-L6-I30" firstAttribute="top" secondItem="98W-Ye-BfR" secondAttribute="bottom" constant="8.5" id="gPV-nD-JZv"/>
+                            <constraint firstItem="5Aj-L6-I30" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iCM-PZ-GhV"/>
+                            <constraint firstItem="LY3-gZ-GpT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ixG-Ym-hEC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LY3-gZ-GpT" secondAttribute="trailing" constant="20" id="uIp-Rp-NDl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segmentedControl" destination="5Aj-L6-I30" id="aVY-Df-hTQ"/>
+                        <outlet property="textView" destination="hJU-1h-fRJ" id="szD-x8-g1E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+</document>
